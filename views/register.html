@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Mercado Liebre</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header-top">
+            <div class="logo-search">
+                <img src="images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre" class="logo">
+                <div class='block-search'>
+                    <form action="/buscar" method='GET'>
+                        <input type="text" name='busqueda' placeholder='Buscar productos' class='busqueda'>
+                        </form>
+                </div>
+            </div>
+            
+            <p class="header-subtitle"> 
+                <i class="fas fa-hand-holding-usd"></i>
+                Comprá en cuotas y sin tarjeta de crédito </p>
+        </div>
+
+        <div class="main-header-bottom">
+            <nav class="main-navbar">
+                <ul class="nav-list1">
+                    <li> <a href=""> Ofertas </a></li>
+                    <li> <a href=""> Tiendas Oficiales </a></li>
+                    <li> <a href=""> Vender </a></li>
+                    <li> <a href=""> Ayuda </a></li>
+                </ul>
+                <ul class="nav-list2">
+                    <li> <a href="/register"> Creá tu cuenta </a>
+                        <i class="far fa-id-card"></i></li>
+                    <li> <a href="/login"> Ingresá </a> 
+                        <i class="fas fa-sign-in-alt"></i></li>
+                    <li> <a href=""> Mis compras </a>
+                        <i class="fas fa-shopping-basket"></i></li>
+                </ul>
+            </nav>
+        </div>
+
+        <a href ='#' class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </a>
+    </header>
+
+    <main>
+        <form action="/procesar" method="post" class="register-form">
+            
+            
+            <input type="text" name="usuario" placeholder="Nombre y apellido" class="form-text" required>
+            <br>
+            
+            
+            <input type="text" name="nombre-usuario" placeholder="Nombre de usuario" class="form-text" required>
+            <br>
+            
+            <label><h3>Fecha de Nacimiento</h3></label>
+            <input type="date" name="fecha" value="mm/dd/yyyy" class="form-text"required>
+            <br>
+
+            <input type="text" name="domicilio" placeholder="Domicilio" class="form-text" required>
+            <br>
+
+            <div>
+                <label class="perfil-usuario"><h3>Perfil de usuario</h3></label>
+                    <div class="perfil">
+                        <input type="radio" name="perfil" id="Comprador"> <label for="Comprador" class="comprador">Comprador</label>
+                        <input type="radio" name="perfil" id="Vendedor"><label for="Vendedor" class="vendedor">Vendedor</label>
+                    </div>
+                <br>
+            </div>
+
+            <div class="hobbies">
+                <label><h3>Hobbies</h3></label>
+                <div class="electro">
+                    <input type="checkbox" name="hobbies" id="Electro" value="Electro">
+                    <label for="Electro">Electro</label>
+                </div>  
+                <div class="moda">
+                    <input type="checkbox" name="hobbies" id="Moda" value="Moda">
+                    <label for="Moda">Moda</label>
+                </div>
+                <div class="hogar">
+                    <input type="checkbox" name="hobbies" id="Hogar" value="Hogar">
+                    <label for="Hogar">Hogar</label>
+                </div>
+                <div class="jugueteria">
+                    <input type="checkbox" name="hobbies" id="Juguetería" value="Juguetería">
+                    <label for="Juguetería">Juguetería</label>
+                </div>
+                <div class="vida-sana">
+                    <input type="checkbox" name="hobbies" id="Vida Sana" value="Vida Sana">
+                    <label for="Vida Sana">Vida Sana</label>
+                </div>
+            </div>
+            <br>
+
+            <label><h3 class="picture">Imagen de Perfil</h3></label>
+            <input type="file" name="foto" accept=".jpg">
+            <br>
+
+            <input type="password" name="clave" id="clave" placeholder="Contraselaña" class="form-text">
+            <br>
+
+            <input type="password" name="confirmar-clave" id="confirmar-clave" placeholder="Confirmar contraseña" class="form-text">
+            <br>
+
+            <div class="form-buttons">
+                <button type="submit" class="send">Enviar</button>
+                <button type="reset" class="reset">Borrar</button>  
+            </div>  
+        </form>
+
+    </main>
+</body>
+</html>

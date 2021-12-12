@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Mercado Liebre</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header-top">
+            <div class="logo-search">
+                <img src="images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre" class="logo">
+                <div class='block-search'>
+                    <form action="/buscar" method='GET'>
+                        <input type="text" name='busqueda' placeholder='Buscar productos' class='busqueda'>
+                        </form>
+                </div>
+            </div>
+            
+            <p class="header-subtitle"> 
+                <i class="fas fa-hand-holding-usd"></i>
+                Comprá en cuotas y sin tarjeta de crédito </p>
+        </div>
+
+        <div class="main-header-bottom">
+            <nav class="main-navbar">
+                <ul class="nav-list1">
+                    <li> <a href=""> Ofertas </a></li>
+                    <li> <a href=""> Tiendas Oficiales </a></li>
+                    <li> <a href=""> Vender </a></li>
+                    <li> <a href=""> Ayuda </a></li>
+                </ul>
+                <ul class="nav-list2">
+                    <li> <a href="/register"> Creá tu cuenta </a>
+                        <i class="far fa-id-card"></i></li>
+                    <li> <a href="/login"> Ingresá </a> 
+                        <i class="fas fa-sign-in-alt"></i></li>
+                    <li> <a href=""> Mis compras </a>
+                        <i class="fas fa-shopping-basket"></i></li>
+                </ul>
+            </nav>
+        </div>
+
+        <a href ='#' class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </a>
+    </header>
+    
+    <form action="" method="post" class="login-form">
+        
+        <input type="text" name="nombre-usuario" placeholder="Nombre de Usuario" class="form-text">
+        <br>
+
+        <input type="password" name="clave" id="clave" placeholder="Contraseña" class="form-text">
+        <br>
+        <div>
+            <button type="submit" class="login-button">Enviar</button>
+        </div>
+    </form>
+
+
+</body>
+</html>
